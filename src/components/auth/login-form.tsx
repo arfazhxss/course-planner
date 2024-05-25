@@ -1,6 +1,6 @@
 "use client";
 
-import CardWrapper from "./card-wrapper";
+import CardWrapper from "@/components/auth/card-wrapper";
 import {
     Form,
     FormControl,
