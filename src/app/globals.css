@@ -76,18 +76,28 @@
   }
 
 
-  /* styles/globals.css */
+/* styles/globals.css */
+/* src/app/globals.css */
 .center-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
 }
 
+.course-image {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
 .dropdown-trigger {
   background-color: #3498db; /* Change this to your desired color */
   color: white;
-  padding: 10px 20px;
+  padding: 10px 20px; /* Decreased padding for smaller size */
+  font-size: 16px; /* Decreased font size */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -99,10 +109,12 @@
   border: 1px solid #2980b9;
   border-radius: 5px;
   margin-top: 5px;
+  width: 300px; /* Adjust width if needed */
 }
 
 .dropdown-item {
-  padding: 10px 20px;
+  padding: 10px 20px; /* Decreased padding for smaller size */
+  font-size: 16px; /* Decreased font size */
   cursor: pointer;
 }
 

@@ -1,0 +1,22 @@
+/* src/components/Header.module.css */
+.header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .header nav ul li {
+    display: inline;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
