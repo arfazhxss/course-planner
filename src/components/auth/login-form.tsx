@@ -1,6 +1,6 @@
 "use client";
 
-import CardWrapper from "./card-wrapper";
+import CardWrapper from "@/components/auth/card-wrapper";
 import {
     Form,
     FormControl,
@@ -10,7 +10,7 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form";
-import { LoginSchema } from "@/schema";
+import { LoginSchema } from "@/app/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { Input } from "../ui/input";
