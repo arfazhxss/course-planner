@@ -38,7 +38,7 @@ function pushChanges() {
   gitCommitInf=$(echo "$mostRecentCommitLog" | grep 'Author:' | cut -d ' ' -f2 | sed 's/[^<]*<\([^>]*\).*/\1/')
 
   if [ "$gitCommitInf" == "Arfaz" ]; then
-    gitCommitInf="Commit by @arfazhxss"
+    gitCommitInf="Commit by course-planner-team"
   elif [ -z "$gitCommitInf" ]; then
     gitCommitInf=""
   else
