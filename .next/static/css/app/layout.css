@@ -645,14 +645,14 @@ video {
   .h-12 {
   height: 3rem;
 }
+  .h-24 {
+  height: 6rem;
+}
   .h-4 {
   height: 1rem;
 }
   .h-9 {
   height: 2.25rem;
-}
-  .h-24 {
-  height: 6rem;
 }
   .w-4 {
   width: 1rem;
@@ -687,6 +687,9 @@ video {
   .rounded-md {
   border-radius: calc(var(--radius) - 2px);
 }
+  .rounded-sm {
+  border-radius: calc(var(--radius) - 4px);
+}
   .border {
   border-width: 1px;
 }
@@ -698,6 +701,9 @@ video {
 }
   .border-input {
   border-color: hsl(var(--input));
+}
+  .border-primary {
+  border-color: hsl(var(--primary));
 }
   .bg-muted\/50 {
   background-color: hsl(var(--muted) / 0.5);
@@ -728,13 +734,13 @@ video {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-  .py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
   .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+  .py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
   .pb-4 {
   padding-bottom: 1rem;
@@ -757,6 +763,9 @@ video {
 }
   .font-medium {
   font-weight: 500;
+}
+  .text-current {
+  color: currentColor;
 }
   .text-muted-foreground {
   color: hsl(var(--muted-foreground));
@@ -850,6 +859,10 @@ video {
   pointer-events: none;
 }
 
+  .disabled\:cursor-not-allowed:disabled {
+  cursor: not-allowed;
+}
+
   .disabled\:opacity-50:disabled {
   opacity: 0.5;
 }
@@ -884,12 +897,20 @@ video {
   animation: accordion-down 0.2s ease-out;
 }
 
+  .data-\[state\=checked\]\:bg-primary[data-state=checked] {
+  background-color: hsl(var(--primary));
+}
+
   .data-\[state\=on\]\:bg-accent[data-state=on] {
   background-color: hsl(var(--accent));
 }
 
   .data-\[state\=selected\]\:bg-muted[data-state=selected] {
   background-color: hsl(var(--muted));
+}
+
+  .data-\[state\=checked\]\:text-primary-foreground[data-state=checked] {
+  color: hsl(var(--primary-foreground));
 }
 
   .data-\[state\=on\]\:text-accent-foreground[data-state=on] {

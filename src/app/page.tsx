@@ -1,4 +1,4 @@
-import YearAccordion from "@/components/year-accordion"
+import YearAccordion from "@/app/dashboard/year-accordion"
 
 export default function Home() {
   return (
