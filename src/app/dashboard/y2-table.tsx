@@ -7,6 +7,8 @@ async function getData(): Promise<Course[]> {
     {
       id: "ECE260",
       name: "Continuous-Time Signals and Systems",
+      terms: [true, false, true],
+      units: 1.5,
     },
     
     // ...

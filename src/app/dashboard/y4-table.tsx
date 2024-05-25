@@ -7,6 +7,8 @@ async function getData(): Promise<Course[]> {
     {
       id: "SENG499",
       name: "Design Project II",
+      terms: [false, false, true],
+      units: 1.5,
     },
     
     // ...

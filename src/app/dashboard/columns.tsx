@@ -6,6 +6,8 @@ import { Checkbox } from "@/components/ui/checkbox"
 export type Course = {
   id: string
   name: string
+  terms: [boolean, boolean, boolean] // [fall, spring, summer]
+  units: number
 }
 
 export const columns: ColumnDef<Course>[] = [
@@ -37,4 +39,8 @@ export const columns: ColumnDef<Course>[] = [
         accessorKey: "name",
         header: "Name",
     },
+    {
+      accessorKey: "units",
+      header: "Units",
+    }
 ]
