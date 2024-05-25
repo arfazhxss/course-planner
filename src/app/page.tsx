@@ -1,7 +1,7 @@
-import YearAccordion from "@/app/dashboard/year-accordion"
-
 export default function Home() {
   return (
-    <YearAccordion />
+    <main>
+      <h1 className="text-3xl font-bold">Hello world!</h1>
+    </main>
   );
 }
