@@ -18,8 +18,10 @@ import { Button } from "../ui/button";
 import { z } from "zod";
 import { useFormStatus } from "react-dom";
 import { useState } from "react";
+import { useRouter } from 'next/navigation'
 
 const RegisterForm = () => {
+    const router = useRouter()
     const [loading, setLoading] = useState(false);
     const form = useForm({
         resolver: zodResolver(RegisterSchema),
@@ -31,9 +33,13 @@ const RegisterForm = () => {
         },
     });
 
-    const onSubmit = (data: z.infer<typeof RegisterSchema>) => {
+    const onSubmit = async (data: z.infer<typeof RegisterSchema>) => {
+        // Simulate a form submission or async operation
         setLoading(true);
         console.log(data);
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        setLoading(false);
+        router.push('/degree_choose');
     };
 
     const { pending } = useFormStatus();
@@ -104,8 +110,8 @@ const RegisterForm = () => {
                             )}
                         />
                     </div>
-                    <Button type="submit" className="w-full" disabled={pending}>
-                        {loading ? "Loading..." : "Register"}
+                    <Button type="submit" className="w-full">
+                        Register
                     </Button>
                 </form>
             </Form>
