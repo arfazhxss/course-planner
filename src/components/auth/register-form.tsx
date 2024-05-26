@@ -21,7 +21,7 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation'
 
 const RegisterForm = () => {
-    const router = useRouter()
+    const router = useRouter();
     const [loading, setLoading] = useState(false);
     const form = useForm({
         resolver: zodResolver(RegisterSchema),
