@@ -1,15 +1,15 @@
-# Course Progressor
+<h1>Course Progressor</h1>
 
-Course Progressor is an efficient full-stack application that is built for students at University of Victoria to help them plan out their degree through selecting courses. We are using NextJS, React, TailwindCSS and Shadcn UI to build the front and backend of the project. This application currently only shows a progress bar, showing your progression through your degree.
+<p>Course Progressor simplifies degree planning for University of Victoria students. Leveraging NextJS, React, TailwindCSS, and Shadcn UI, it offers a streamlined interface and progress tracking features.</p>
 
-Choosing your courses:
-![Image 1](resources/1.png)
+<p>Choosing your courses:</p>
+<img src="resources/1.png" alt="Image 1" width="300">
 
-Registration:
-![Image 2](resources/2.png)
+<p>Registration:</p>
+<img src="resources/2.png" alt="Image 2" width="300">
 
-Courses throughout your selected degree:
-![Image 3](resources/3.png)
+<p>Courses throughout your selected degree:</p>
+<img src="resources/3.png" alt="Image 3" width="300">
 
-Data Table Scrapped from UVic Websites for each individual courses:
-![Image 4](resources/4.png)
+<p>Data Table Scrapped from UVic Websites for each individual courses:</p>
+<img src="resources/4.png" alt="Image 4" width="300">
