@@ -3,23 +3,24 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import "@/app/globals.css"; // Ensure this path is correct
 
 const DegreeChoosePage = () => {
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger>Choose Your Course</DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <DropdownMenuItem>Software Engineering</DropdownMenuItem>
-        <DropdownMenuItem>Computer Engineering</DropdownMenuItem>
-        <DropdownMenuItem>Computer Science</DropdownMenuItem>
-        <DropdownMenuItem>Electrical Engineering</DropdownMenuItem>
-        <DropdownMenuItem>Mechanical Engineering</DropdownMenuItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <div className="center-container">
+      <DropdownMenu>
+        <DropdownMenuTrigger className="dropdown-trigger">Choose Your Course</DropdownMenuTrigger>
+        <DropdownMenuContent className="dropdown-content">
+          <DropdownMenuItem className="dropdown-item">Software Engineering</DropdownMenuItem>
+          <DropdownMenuItem className="dropdown-item">Computer Engineering</DropdownMenuItem>
+          <DropdownMenuItem className="dropdown-item">Computer Science</DropdownMenuItem>
+          <DropdownMenuItem className="dropdown-item">Electrical Engineering</DropdownMenuItem>
+          <DropdownMenuItem className="dropdown-item">Mechanical Engineering</DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
   );
 };
 
