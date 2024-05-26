@@ -1,0 +1,38 @@
+/* src/components/ProgressBar.module.css */
+.progressBarContainer {
+    width: 100%;
+    background-color: #e0e0df;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  
+  .progressBar {
+    height: 20px;
+    background-color: #76c7c0;
+    transition: width 0.2s ease-in-out;
+  }
+/* src/components/ProgressBar.module.css */
+.progressBarWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.progressBarContainer {
+  width: 50%; /* Adjust the width as needed */
+  background-color: #e0e0df;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 20px;
+  background-color: #76c7c0;
+  transition: width 0.2s ease-in-out;
+}
+  
