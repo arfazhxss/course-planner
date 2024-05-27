@@ -15,14 +15,20 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@types/cheerio": "^0.22.35",
     "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
     "cherio": "^1.0.0-rc.2",
     "fs-extra": "^11.2.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.9.8",
     "pdf-parse": "^1.1.1",
     "pdf-ts": "^0.0.2",
+    "pdf.js-extract": "^0.2.1",
     "puppeteer": "^22.10.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "puppeteer-extra-plugin-user-preferences": "^2.4.1"
+    "puppeteer-extra-plugin-user-preferences": "^2.4.1",
+    "sqlite3": "^5.1.7"
   }
 }
