@@ -86,7 +86,8 @@ const main = async () => {
     );
 
     console.log(jsonData);
-    fs.writeFileSync('./data.json', jsonData, 'utf8');
+    // fs.writeFileSync('./data.json', jsonData, 'utf8');
+    // fs.writeFileSync('../course-data.json', jsonData, 'utf8');
     console.log('JSON data has been saved to data.json');
     await browser.close();
 };
