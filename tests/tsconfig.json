@@ -1,6 +1,14 @@
+// {
+//   "compilerOptions": {
+//     "lib": ["es6", "dom"]
+//   }
+// }
 {
   "compilerOptions": {
-    "lib": ["es6", "dom"]
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
   }
 }
-
