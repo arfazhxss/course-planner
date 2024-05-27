@@ -79,8 +79,8 @@
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Natural Science #1",
+        "courseType": "Elective",
         "unit": 1.5
       }
     ]
@@ -129,8 +129,8 @@
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Complementary Studies #1",
+        "courseType": "Elective",
         "unit": 1.5
       }
     ]
@@ -171,8 +171,8 @@
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Complementary Studies #2",
+        "courseType": "Elective",
         "unit": 1.5
       }
     ]
@@ -221,8 +221,8 @@
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Natural Science #2",
+        "courseType": "Elective",
         "unit": 1.5
       }
     ]
@@ -295,20 +295,20 @@
       },
       {
         "courseCode": "SENG499",
-        "courseName": "Design Project II (3.0 units)",
+        "courseName": "Design Project II",
         "courseType": "Mandatory",
         "unit": 1.5
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Technical #1",
+        "courseType": "Elective",
         "unit": 1.5
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Technical #2",
+        "courseType": "Elective",
         "unit": 1.5
       }
     ]
@@ -339,26 +339,26 @@
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Technical #3",
+        "courseType": "Elective",
         "unit": 1.5
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Technical #4",
+        "courseType": "Elective",
         "unit": 1.5
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Technical #5",
+        "courseType": "Elective",
         "unit": 1.5
       },
       {
         "courseCode": "",
-        "courseType": "Elective",
         "courseName": "Natural Science #3",
+        "courseType": "Elective",
         "unit": 1.5
       }
     ]

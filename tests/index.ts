@@ -67,53 +67,67 @@ const main = async () => {
                         }
                     ];
 
-                } else {
-                    if ((courseName === undefined) && (courseCode === "")) {
-                        return;
-                    }
-                    else if (courseName === undefined && courseCode.includes("Elective")) {
-                        if (courseCode.includes("Technical")) {
-                            return {
-                                courseCode: "",
-                                courseName: `${courseCode.slice(0, -8).trim()} #${++technical}`,
-                                courseType: "Elective",
-                                unit: unit
-                            };
-                        } else if (courseCode.includes("Natural")) {
-                            return {
-                                courseCode: "",
-                                courseName: `${courseCode.slice(0, -9).trim()} #${++natural}`,
-                                courseType: "Elective",
-                                unit: unit
-                            };
-                        } else if (courseCode.includes("Complementary")) {
-                            return {
-                                courseCode: "",
-                                courseName: `${courseCode.slice(0, -8).trim()} #${++complementary}`,
-                                courseType: "Elective",
-                                unit: unit
-                            };
-                        }
-                    }
-                    else if (courseName === "Design Project II (3.0 units)") {
+                }
+                else if ((courseName === undefined) && (courseCode === "")) { return; }
+                else if (courseName === undefined && courseCode.includes("Elective")) {
+                    if (courseCode.includes("Technical")) {
                         return {
-                            courseCode: courseCode.trim(),
-                            courseName: courseName.slice(0, -12),
-                            courseType: "Mandatory",
+                            courseCode: "",
+                            courseName: `${courseCode.slice(0, -8).trim()} #${++technical}`,
+                            courseType: "Elective",
                             unit: unit
                         };
                     }
-                    else {
+                    else if (courseCode.includes("Natural")) {
                         return {
-                            courseCode: courseCode.trim(),
-                            courseName: courseName,
-                            courseType: "Mandatory",
+                            courseCode: "",
+                            courseName: `${courseCode.slice(0, -9).trim()} #${++natural}`,
+                            courseType: "Elective",
+                            unit: unit
+                        };
+                    } else if (courseCode.includes("Complementary")) {
+                        return {
+                            courseCode: "",
+                            courseName: `${courseCode.slice(0, -8).trim()} #${++complementary}`,
+                            courseType: "Elective",
                             unit: unit
                         };
                     }
                 }
+                else if (courseCode.includes("499")) {
+                    return {
+                        courseCode: courseCode.trim(),
+                        courseName: courseName.slice(0, -12),
+                        courseType: "Mandatory",
+                        unit: "3.0"
+                    };
+                }
+                else if (courseCode.includes("ENGR")) {
+                    if (courseCode.includes("110") || courseCode.includes("120")) {
+                        return {
+                            courseCode: courseCode.trim(),
+                            courseName: courseName,
+                            courseType: "Mandatory",
+                            unit: "2.5"
+                        };
+                    } else {
+                        return {
+                            courseCode: courseCode.trim(),
+                            courseName: courseName,
+                            courseType: "Mandatory",
+                            unit: "0.5"
+                        };
+                    }
+                }
+                else {
+                    return {
+                        courseCode: courseCode.trim(),
+                        courseName: courseName,
+                        courseType: "Mandatory",
+                        unit: unit
+                    };
+                }
             }).filter(course => course !== undefined);;
-
 
             return {
                 term,
@@ -126,9 +140,9 @@ const main = async () => {
     );
 
     console.log(jsonData);
-    fs.writeFileSync('./data.json', jsonData, 'utf8');
-    fs.writeFileSync('../course-data.json', jsonData, 'utf8');
-    console.log('JSON data has been saved to data.json');
+    // fs.writeFileSync('./data.json', jsonData, 'utf8');
+    // fs.writeFileSync('../course-data.json', jsonData, 'utf8');
+    // console.log('JSON data has been saved to data.json');
     await browser.close();
 };
 
