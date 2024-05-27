@@ -20,11 +20,8 @@ const DegreeChoosePage = () => {
   return (
     <div className="center-container">
       <DropdownMenu>
-        <DropdownMenuTrigger className="dropdown-trigger">Choose Your Course</DropdownMenuTrigger>
+        <DropdownMenuTrigger className="dropdown-trigger">Choose Your Degree</DropdownMenuTrigger>
         <DropdownMenuContent className="dropdown-content">
-          <DropdownMenuItem className="dropdown-item" onClick={handleDropdownItemClick}>
-            Software Engineering
-          </DropdownMenuItem>
           <DropdownMenuItem className="dropdown-item" onClick={handleDropdownItemClick}>
             Computer Engineering
           </DropdownMenuItem>
@@ -33,6 +30,15 @@ const DegreeChoosePage = () => {
           </DropdownMenuItem>
           <DropdownMenuItem className="dropdown-item" onClick={handleDropdownItemClick}>
             Electrical Engineering
+          </DropdownMenuItem>
+          <DropdownMenuItem className="dropdown-item" onClick={handleDropdownItemClick}>
+            Software Development
+          </DropdownMenuItem>
+          <DropdownMenuItem className="dropdown-item" onClick={handleDropdownItemClick}>
+            Software Engineering
+          </DropdownMenuItem>
+          <DropdownMenuItem className="dropdown-item" onClick={handleDropdownItemClick}>
+            Mathematics
           </DropdownMenuItem>
           <DropdownMenuItem className="dropdown-item" onClick={handleDropdownItemClick}>
             Mechanical Engineering

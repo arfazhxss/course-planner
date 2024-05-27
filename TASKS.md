@@ -1,15 +1,19 @@
-# To Do
-
-### Musts
-- [ ] Sign in page (either for show or just link email to data)
-- [ ] Landing page where you select your degree
-- [ ] Main page with course list where you cross things out
-- [ ] Get SENG course data
-
-### Shoulds
-- [ ] Link prerequisites (courses become available once you've crossed off their prereqs)
+# To Do:
+- [ ] Add more functionality and UI to Degree Selection page
+- [ ] Get SENG course data (via web scraping) and link to course list
+- [ ] Create multiple pages with course data according to selected degree
+- [ ] Implement & Link Sign-In Page with UVic's Account Authentication
 - [ ] Include technical elective choices
 
-### If we have time
-- [ ] Add other degrees
-- [ ] Actually implement sign in (potentially Google or UVic sign on)
+# In the future:
+- [ ] Add degrees outside of STEM
+
+# Delegated Tasks
+
+# Arfazh:
+
+# Mansahaj:
+
+# Zoey:
+
+# Audrik:
