@@ -53,7 +53,7 @@ const main = async () => {
                     const [option1, option2] = course.split(" OR");
                     return {
                         [option1.split(" - ")[1].slice(0, -2).trim()]: option1.split("-")[0].slice(1, -1).trim(),
-                        [option2.split(" - ")[1].slice(0, -2).trim()]: option2.split("-")[0].trim()
+                        [option2.split(" - ")[1].slice(0, -1).replace(/[^a-zA-Z\s]/g, '').trim()]: option2.split("-")[0].trim()
                     };
                 } else {
                     const [courseName, courseCode] = course.slice(1, -1).split("- ");
@@ -86,8 +86,8 @@ const main = async () => {
     );
 
     console.log(jsonData);
-    // fs.writeFileSync('./data.json', jsonData, 'utf8');
-    // console.log('JSON data has been saved to data.json');
+    fs.writeFileSync('./data.json', jsonData, 'utf8');
+    console.log('JSON data has been saved to data.json');
     await browser.close();
 };
 
