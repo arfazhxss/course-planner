@@ -69,38 +69,41 @@ const main = async () => {
 
                 } else {
                     if ((courseName === undefined) && (courseCode === "")) {
-                        // return {
-                        //     courseCode: "",
-                        //     courseType: "",
-                        //     courseName: "",
-                        //     unit: ""
-                        // };
                         return;
                     }
                     else if (courseName === undefined && courseCode.includes("Elective")) {
                         if (courseCode.includes("Technical")) {
                             return {
                                 courseCode: "",
-                                courseType: "Elective",
                                 courseName: `${courseCode.slice(0, -8).trim()} #${++technical}`,
+                                courseType: "Elective",
                                 unit: unit
                             };
                         } else if (courseCode.includes("Natural")) {
                             return {
                                 courseCode: "",
-                                courseType: "Elective",
                                 courseName: `${courseCode.slice(0, -9).trim()} #${++natural}`,
+                                courseType: "Elective",
                                 unit: unit
                             };
                         } else if (courseCode.includes("Complementary")) {
                             return {
                                 courseCode: "",
-                                courseType: "Elective",
                                 courseName: `${courseCode.slice(0, -8).trim()} #${++complementary}`,
+                                courseType: "Elective",
                                 unit: unit
                             };
                         }
-                    } else {
+                    }
+                    else if (courseName === "Design Project II (3.0 units)") {
+                        return {
+                            courseCode: courseCode.trim(),
+                            courseName: courseName.slice(0, -12),
+                            courseType: "Mandatory",
+                            unit: unit
+                        };
+                    }
+                    else {
                         return {
                             courseCode: courseCode.trim(),
                             courseName: courseName,
