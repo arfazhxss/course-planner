@@ -43,7 +43,7 @@ const main = async () => {
     });
 
     let { technical = 0, natural = 0, complementary = 0, unit = 1.5 } = {};
-    const jsonData = JSON.stringify(
+    const BSEngData = JSON.stringify(
         tableData.map((data) => {
             const termAndSession = data.split('\n')[0].slice(6, -1);
             const [term, session] = termAndSession.split(' - ');
@@ -139,10 +139,10 @@ const main = async () => {
         2
     );
 
-    console.log(jsonData);
-    // fs.writeFileSync('./data.json', jsonData, 'utf8');
-    // fs.writeFileSync('../course-data.json', jsonData, 'utf8');
-    // console.log('JSON data has been saved to data.json');
+    console.log(BSEngData);
+    fs.writeFileSync('./data.json', BSEngData, 'utf8');
+    fs.writeFileSync('../course-data.json', BSEngData, 'utf8');
+    console.log('JSON data has been saved to data.json');
     await browser.close();
 };
 
