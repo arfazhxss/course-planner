@@ -16,7 +16,7 @@
   <img src="resources/3.png" alt="Image 3" width="500">
 </div>
 
-<h4>Data Table Scrapped from UVic Websites for each individual courses:</h4>
+<h4><a href="https://github.com/arfazhxss/course-planner/blob/main/course-data.json"> Data Table Scrapped from UVic Websites for each individual courses:</a></h4>
 <div align="center">
   <img src="resources/4.png" alt="Image 4" width="500">
 </div>
