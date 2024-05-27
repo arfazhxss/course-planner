@@ -14,7 +14,7 @@
       },
       {
         "Calculus": "MATH100",
-        "Introduction to Calculu": "MATH109"
+        "Introduction to Calculus": "MATH109"
       },
       {
         "Matrix Algebra for Engineers": "MATH110"
@@ -41,7 +41,7 @@
         "Properties of Materials ORCHEM150 ": "CHEM101"
       },
       {
-        "1": "Natural Science Elective"
+        "Natural Science Elective": 1
       },
       {
         "undefined": ""
@@ -68,7 +68,7 @@
         "Introduction to Probability and Statistics I": "STAT260"
       },
       {
-        "1": "Complementary Studies Elective"
+        "Complementary Studies Elective": 1
       }
     ]
   },
@@ -92,7 +92,7 @@
         "Human Computer Interaction": "SENG310"
       },
       {
-        "2": "Complementary Studies Elective"
+        "Complementary Studies Elective": 2
       }
     ]
   },
@@ -117,7 +117,7 @@
         "Software Evolution": "SENG371"
       },
       {
-        "2": "Natural Science Elective"
+        "Natural Science Elective": 2
       }
     ]
   },
@@ -160,10 +160,10 @@
         "Design Project II (3.0 units)": "SENG499"
       },
       {
-        "1": "Technical Elective"
+        "Technical Elective": 1
       },
       {
-        "2": "Technical Elective"
+        "Technical Elective": 2
       },
       {
         "undefined": ""
@@ -176,22 +176,22 @@
     "courses": [
       {
         "Real-Time Computer Systems Design Project": "ECE455",
-        "Design and Analysis of Real-time Systems": "CSC460"
+        "Design and Analysis of Realtime Systems": "CSC460"
       },
       {
         "Social and Professional Issues": "SENG401"
       },
       {
-        "3": "Technical Elective"
+        "Technical Elective": 3
       },
       {
-        "4": "Technical Elective"
+        "Technical Elective": 4
       },
       {
-        "5": "Technical Elective"
+        "Technical Elective": 5
       },
       {
-        "3": "Natural Science Elective"
+        "Natural Science Elective": 3
       }
     ]
   }
