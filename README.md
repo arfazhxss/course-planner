@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/VikeLabs/Co-op-Me">
-    <img src="https://capsule-render.vercel.app/api?type=rect&height=100&color=dark&text=UVic%20Course%20Planner&fontSize=50&fontColor=ffffff">
+    <img src="https://capsule-render.vercel.app/api?type=rect&height=100&color=dark&text=UVic%20Course%20Planner&fontSize=50&fontColor=ffffff&fontAlign=50&fontAlignY=54">
   </a>
 </div>
 <p>Course Progressor simplifies degree planning for University of Victoria students. Leveraging NextJS, React, TailwindCSS, and Shadcn UI, it offers a streamlined interface and progress tracking features.</p>
