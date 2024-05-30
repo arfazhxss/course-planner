@@ -1,4 +1,8 @@
-<h1>Course Progressor</h1>
+<div align="center">
+  <a href="https://github.com/VikeLabs/Co-op-Me">
+    <img src="https://capsule-render.vercel.app/api?type=rect&height=103&color=dark&text=UVic%20Course%20Planner&fontColor=ffffff">
+  </a>
+</div>
 <p>Course Progressor simplifies degree planning for University of Victoria students. Leveraging NextJS, React, TailwindCSS, and Shadcn UI, it offers a streamlined interface and progress tracking features.</p>
 
 <h4>Choosing your courses:</h4> 
