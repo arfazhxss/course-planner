@@ -17,21 +17,21 @@ export type Semester = {
 }
 
 // Define columns for the semester table
-export const semesterColumns: ColumnDef<Semester>[] = [
-    {
-        accessorKey: "term",
-        header: "Term",
-    },
-    {
-        accessorKey: "session",
-        header: "Session",
-    },
-    {
-        accessorKey: "courses",
-        header: "Number of Courses",
-        cell: ({ row }) => row.original.courses.length,
-    },
-]
+// export const semesterColumns: ColumnDef<Semester>[] = [
+//     {
+//         accessorKey: "term",
+//         header: "Term",
+//     },
+//     {
+//         accessorKey: "session",
+//         header: "Session",
+//     },
+//     {
+//         accessorKey: "courses",
+//         header: "Number of Courses",
+//         cell: ({ row }) => row.original.courses.length,
+//     },
+// ]
 
 // Define columns for the course table
 export const courseColumns: ColumnDef<Course>[] = [

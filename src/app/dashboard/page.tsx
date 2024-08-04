@@ -1,7 +1,7 @@
 "use client"
 
 import { DataTable } from "@/app/dashboard/DataTable"
-import { semesterColumns, courseColumns } from "@/app/dashboard/Columns"
+import { courseColumns } from "@/app/dashboard/columns"
 import courseData from '@/tests/data.json'
 
 type Course = {
@@ -22,11 +22,12 @@ export default function CoursePage() {
 
   return (
     <div>
-      <h1>Semesters</h1>
-      <DataTable columns={semesterColumns} data={semesters} />
-
-      <h2>Courses for {semesters[0].term}</h2>
-      <DataTable columns={courseColumns} data={semesters[0].courses} />
+      {semesters.map((semester, index) => (
+        <div key={index}>
+          <h2>Courses for {semester.term}</h2>
+          <DataTable columns={courseColumns} data={semester.courses} />
+        </div>
+      ))}
     </div>
   )
 }

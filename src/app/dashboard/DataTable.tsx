@@ -16,7 +16,7 @@ import {
     TableRow,
 } from "@/components/ui/table"
 
-import { Semester, Course } from "@/app/dashboard/Columns" // Import your data types
+import { Semester, Course } from "@/app/dashboard/columns"
 
 // This type allows the component to work with both Semester and Course data
 type DataTableProps<T extends Semester | Course> = {
