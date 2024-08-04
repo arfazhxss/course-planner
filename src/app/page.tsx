@@ -1,23 +1,21 @@
-"use client";
-
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 export default function Home() {
-  const router = useRouter();
-  const handleDropdownItemClick = () => {
-    router.push('/auth/login');
-  };
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="text-center">
-        <h1 className="text-7xl font-bold">UVic Course Progresser</h1>
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-8"
-          onClick={handleDropdownItemClick}
-        >
-          START
-        </button>
+    <div className="container mx-auto">
+      <h2 className="text-xl font-semibold mb-4">Welcome to Course Planner</h2>
+      <p className="mb-4">Plan your academic journey with ease.</p>
+
+      {/* Placeholder for the table */}
+      <div className="border border-gray-300 p-4 mb-4">
+        <p className="text-center text-gray-500">
+          [Table with course planning data will be displayed here]
+        </p>
       </div>
+
+      <Link href="/dashboard" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+        Go to Dashboard
+      </Link>
     </div>
   );
 }

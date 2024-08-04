@@ -1,46 +1,54 @@
 "use client"
 
 import { ColumnDef } from "@tanstack/react-table"
-import { Checkbox } from "@/components/ui/checkbox"
 
+// Define the shape of your data
 export type Course = {
-  id: string
-  name: string
-  terms: [boolean, boolean, boolean] // [fall, spring, summer]
-  units: number
+    courseCode: string
+    courseName: string
+    courseType: "Mandatory" | "Elective"
+    unit: number
 }
 
-export const columns: ColumnDef<Course>[] = [
+export type Semester = {
+    term: string
+    session: "Fall" | "Spring" | "Summer"
+    courses: Course[]
+}
+
+// Define columns for the semester table
+export const semesterColumns: ColumnDef<Semester>[] = [
     {
-        id: "select",
-        header: ({ table }) => (
-          <Checkbox
-            checked={
-              table.getIsAllPageRowsSelected() ||
-              (table.getIsSomePageRowsSelected() && "indeterminate")
-            }
-            onCheckedChange={(value) => table.toggleAllPageRowsSelected(!!value)}
-            aria-label="Select all"
-          />
-        ),
-        cell: ({ row }) => (
-          <Checkbox
-            checked={row.getIsSelected()}
-            onCheckedChange={(value) => row.toggleSelected(!!value)}
-            aria-label="Select row"
-          />
-        ),
+        accessorKey: "term",
+        header: "Term",
     },
     {
-        accessorKey: "id",
-        header: "ID",
+        accessorKey: "session",
+        header: "Session",
     },
     {
-        accessorKey: "name",
-        header: "Name",
+        accessorKey: "courses",
+        header: "Number of Courses",
+        cell: ({ row }) => row.original.courses.length,
+    },
+]
+
+// Define columns for the course table
+export const courseColumns: ColumnDef<Course>[] = [
+    {
+        accessorKey: "courseCode",
+        header: "Course Code",
     },
     {
-      accessorKey: "units",
-      header: "Units",
-    }
+        accessorKey: "courseName",
+        header: "Course Name",
+    },
+    {
+        accessorKey: "courseType",
+        header: "Type",
+    },
+    {
+        accessorKey: "unit",
+        header: "Units",
+    },
 ]
