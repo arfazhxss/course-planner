@@ -1,11 +1,3 @@
-// import YearAccordion from "./year-accordion"
-
-// export default function Home() {
-//   return (
-//     <YearAccordion />
-//   );
-// }
-
 import React from 'react';
 import YearAccordion from './year-accordion';
 import ProgressBar from '@/components/ProgressBar';
