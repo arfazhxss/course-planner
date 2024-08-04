@@ -1,8 +1,8 @@
 "use client"
 
 import { ColumnDef } from "@tanstack/react-table"
+import { ChevronDown, ChevronRight } from "lucide-react"
 
-// Define the shape of your data
 export type Course = {
     courseCode: string
     courseName: string
@@ -16,24 +16,38 @@ export type Semester = {
     courses: Course[]
 }
 
-// Define columns for the semester table
-// export const semesterColumns: ColumnDef<Semester>[] = [
-//     {
-//         accessorKey: "term",
-//         header: "Term",
-//     },
-//     {
-//         accessorKey: "session",
-//         header: "Session",
-//     },
-//     {
-//         accessorKey: "courses",
-//         header: "Number of Courses",
-//         cell: ({ row }) => row.original.courses.length,
-//     },
-// ]
+export const semesterColumns: ColumnDef<Semester>[] = [
+    {
+        id: "expander",
+        header: () => null,
+        cell: ({ row }) => {
+            return row.getCanExpand() ? (
+                <button
+                    {...{
+                        onClick: row.getToggleExpandedHandler(),
+                        style: { cursor: "pointer" },
+                    }}
+                >
+                    {row.getIsExpanded() ? <ChevronDown /> : <ChevronRight />}
+                </button>
+            ) : null
+        },
+    },
+    {
+        accessorKey: "term",
+        header: "Term",
+    },
+    {
+        accessorKey: "session",
+        header: "Session",
+    },
+    {
+        accessorKey: "courses",
+        header: "Number of Courses",
+        cell: ({ row }) => row.original.courses.length,
+    },
+]
 
-// Define columns for the course table
 export const courseColumns: ColumnDef<Course>[] = [
     {
         accessorKey: "courseCode",
